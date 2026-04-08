@@ -17,7 +17,7 @@ Calculatrice réalisée avec le module **Tkinter** de Python dans le cadre du co
 ```
 calculatrice/
 ├── calculatrice_base.py      # Interface graphique Tkinter + moteur de calcul
-├── calculatrice_avancee.py   # Version console (ligne de commande)
+├── calculatrice_avancee.py   # Version avancee Tkinter (memoire M+, M-, MR, MC)
 └── README.md                 # Documentation (ce fichier)
 ```
 
@@ -34,7 +34,7 @@ python --version
 # Lancer la calculatrice graphique
 python calculatrice_base.py
 
-# Lancer la calculatrice console
+# Lancer la version avancee (memoire)
 python calculatrice_avancee.py
 ```
 
@@ -57,12 +57,16 @@ python calculatrice_avancee.py
 - **Pop-ups** : `showinfo`, `showerror`, `askyesno` via `tkinter.messagebox`
 - **Sélecteur de fichiers** via `tkinter.filedialog`
 
-### Calculatrice console (`calculatrice_avancee.py`)
+### Calculatrice avancee (`calculatrice_avancee.py`)
 
 - Addition, soustraction, multiplication, division
-- Gestion de la **mémoire** (M+, M-, MR, MC)
+- Gestion de la **mémoire** (M+, M-, MR, MC) avec une ligne de boutons dediee
+- `M+` en mode memoire : exemple `10` puis `M+` puis `2` donne `12`
+- `M-` en mode memoire : exemple `10` puis `M-` puis `2` donne `8`
+- `MR` rappelle la memoire comme resultat courant
+- `MC` remet la memoire a `0` et efface la saisie (comme `C`)
+- Menu `Aide` incluant une explication de chaque bouton
 - Protection contre la **division par zéro**
-- Interface en ligne de commande
 
 ---
 
