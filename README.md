@@ -134,4 +134,4 @@ python calculatrice_base.py
 
 ---
 
-*Projet réalisé dans le cadre du cours INF2032 – Python pour l'ingénieur – ESMT*
+*Projet réalisé dans le cadre du cours INF2032 – Python pour l'ingénieur – ESIEA- LAVAL*
